@@ -1,0 +1,22 @@
+resources:
+- tenants/project-spaces/mq-qmgr01
+- tenants/project-spaces/mq-qmgr02
+
+components:
+- https://github.com/ldesrosi/gitops-components-library/components/operators/cert-manager/acm
+- https://github.com/ldesrosi/gitops-components-library/components/operators/mq/acm
+- https://github.com/ldesrosi/gitops-components-library/components/operators/ace/acm
+
+patches:
+- target:
+    kind: Placement
+    name: all-clusters-placement
+  patch: |-
+    - op: replace
+      path: /spec/clusterSets/0
+      value: nwg
+    - op: replace
+      path: /spec/predicates/requiredClusterSelector/labelSelector/matchExpressions/0
+      value: 
+        - nwg-mm
+        - nwg-mg
