@@ -1,2 +1,4 @@
 login.sh
 .DS_Store
+tls.key
+tls.crt
