@@ -2,13 +2,9 @@ kind: AppProject
 apiVersion: argoproj.io/v1alpha1
 metadata:
   name: default-name
-  namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  namespace: openshift-gitops
 spec:
   description: Default Project
-  sourceNamespaces:
-  - default-name
   sourceRepos:
   - '*'
   destinations:
