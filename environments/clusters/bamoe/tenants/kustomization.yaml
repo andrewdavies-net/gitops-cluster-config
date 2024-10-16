@@ -1,3 +1,3 @@
 resources:
-- ../../../tenants/project-spaces/bamoe-canvas
-- ../../../tenants/project-spaces/bamoe-services
+- ../../../../tenants/project-spaces/bamoe-canvas
+- ../../../../tenants/project-spaces/bamoe-services
