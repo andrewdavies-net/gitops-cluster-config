@@ -1,8 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: operators-app
+  name: pki-ca-app
   namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   project: default
   destination:
@@ -11,5 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   sources:
     - repoURL: https://github.com/ldesrosi/gitops-cluster-config.git
-      path: environments/clusters/bamoe/operators
+      path: environments/clusters/bamoe/pki-ca
       targetRevision: HEAD
+      plugin:
+        name: kustomize-with-local-plugins
