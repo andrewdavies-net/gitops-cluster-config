@@ -1,28 +1,4 @@
 resources:
-  - https://github.com/ldesrosi/gitops-components-library/base
-
-components:
-- https://github.com/ldesrosi/gitops-components-library/components/operators/gitops
-- https://github.com/ldesrosi/gitops-components-library/components/operators/cert-manager/acm
-- https://github.com/ldesrosi/gitops-components-library/components/operators/kafka/acm
-- https://github.com/ldesrosi/gitops-components-library/components/operators/keycloak/acm
-- https://github.com/ldesrosi/gitops-components-library/components/operators/postgresql/acm
-
-patches:
-- target:
-    kind: Application
-    name: tenants-config
-  patch: |-
-    - op: replace
-      path: /spec/sources/0/repoURL
-      value: https://github.com/ldesrosi/gitops-cluster-config.git
-    - op: replace
-      path: /spec/sources/0/path
-      value: environments/clusters/bamoe/tenants
-- target:
-    kind: ApplicationSet
-  patch: |-
-    - op: replace
-      path: /spec/generators
-      value: 
-        - clusters: {}
+  - ./operators/acm
+  - ./pki-ca/acm
+  - ./tenants/acm
