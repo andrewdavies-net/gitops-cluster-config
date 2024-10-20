@@ -1,4 +1,0 @@
-apiVersion: transformers
-kind: ./pki-generator
-metadata:
-  name: pki-generator

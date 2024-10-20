@@ -1,4 +1,3 @@
 resources:
   - ./operators/acm
-  - ./pki-ca/acm
   - ./tenants/acm
