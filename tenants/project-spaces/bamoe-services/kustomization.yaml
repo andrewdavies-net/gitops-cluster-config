@@ -26,5 +26,7 @@ patches:
       path: /spec/destinations/0/namespace
       value: app-bamoe-services
     - op: add
-      path: /spec/destinations/1/namespace
-      value: keycloak
+      path: /spec/destinations
+      value: 
+        - namespace: keycloak
+          server: '*'
