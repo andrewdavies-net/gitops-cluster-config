@@ -4,7 +4,7 @@ resources:
 components:
 - https://github.com/ldesrosi/gitops-components-library/components/operators/cert-manager/acm
 - https://github.com/ldesrosi/gitops-components-library/components/operators/kafka/acm
-# - https://github.com/ldesrosi/gitops-components-library/components/operators/keycloak/acm
+- https://github.com/ldesrosi/gitops-components-library/components/operators/keycloak/acm
 - https://github.com/ldesrosi/gitops-components-library/components/operators/postgresql/acm
 
 patches:
