@@ -5,6 +5,27 @@ metadata:
   namespace: openshift-gitops
 spec:
   clusterSets:
+    - nwg-z
+    - nwg
+  predicates:
+    - requiredClusterSelector:
+        labelSelector:
+          matchExpressions:
+            - key: name
+              operator: In
+              values:
+                - nwg-mm-z
+                - nwg-mg-z
+                - nwg-mm
+                - nwg-mg
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: x86-clusters-placement
+  namespace: openshift-gitops
+spec:
+  clusterSets:
     - nwg
   predicates:
     - requiredClusterSelector:
@@ -15,3 +36,21 @@ spec:
               values:
                 - nwg-mm
                 - nwg-mg
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: z-clusters-placement
+  namespace: openshift-gitops
+spec:
+  clusterSets:
+    - nwg-z
+  predicates:
+    - requiredClusterSelector:
+        labelSelector:
+          matchExpressions:
+            - key: name
+              operator: In
+              values:
+                - nwg-mm-z
+                - nwg-mg-z
