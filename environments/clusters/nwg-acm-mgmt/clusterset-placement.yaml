@@ -6,6 +6,7 @@ metadata:
 spec:
   clusterSets:
     - nwg-ocpz
+    - nwg
   predicates:
     - requiredClusterSelector:
         labelSelector:
