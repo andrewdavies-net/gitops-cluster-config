@@ -5,6 +5,6 @@ resources:
 - ../../../tenants/project-spaces/apic
 
 components:
-- https://github.com/ldesrosi/gitops-components-library/components/operators/cert-manager/acm
-- https://github.com/ldesrosi/gitops-components-library/components/operators/ibm-mq/acm
-- https://github.com/ldesrosi/gitops-components-library/components/operators/ibm-ace/acm
+- https://github.com/andrewdavies-net/gitops-components-library/components/operators/cert-manager/acm
+- https://github.com/andrewdavies-net/gitops-components-library/components/operators/ibm-mq/acm
+- https://github.com/andrewdavies-net/gitops-components-library/components/operators/ibm-ace/acm

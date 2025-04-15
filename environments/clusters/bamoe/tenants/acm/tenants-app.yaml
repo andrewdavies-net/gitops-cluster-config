@@ -12,6 +12,6 @@ spec:
     namespace: default
     server: https://kubernetes.default.svc
   sources:
-    - repoURL: https://github.com/ldesrosi/gitops-cluster-config.git
+    - repoURL: https://github.com/andrewdavies-net/gitops-cluster-config.git
       path: environments/clusters/bamoe/tenants
       targetRevision: HEAD
