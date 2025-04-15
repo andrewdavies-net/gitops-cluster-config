@@ -5,8 +5,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   clusterSets:
-    - nwg-z
-    - nwg
+    - nwg-ocpz
   predicates:
     - requiredClusterSelector:
         labelSelector:
@@ -44,7 +43,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   clusterSets:
-    - nwg-z
+    - nwg-ocpz
   predicates:
     - requiredClusterSelector:
         labelSelector:
