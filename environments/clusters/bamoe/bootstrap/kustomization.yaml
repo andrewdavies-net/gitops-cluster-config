@@ -1,5 +1,5 @@
 resources:
-  - https://github.com//gitops-components-library/base
+  - https://github.com/andrewdavies-net/gitops-components-library/base
 
 components:
-- https://github.com//gitops-components-library/components/operators/gitops
+- https://github.com/andrewdavies-net/gitops-components-library/components/operators/gitops
