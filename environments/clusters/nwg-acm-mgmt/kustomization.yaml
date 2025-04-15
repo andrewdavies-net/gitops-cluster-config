@@ -2,7 +2,6 @@ resources:
 - ./clusterset-placement.yaml
 - ../../../tenants/project-spaces/mq-qmgr01
 - ../../../tenants/project-spaces/mq-qmgr02
-- ../../../tenants/project-spaces/apic
 
 components:
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/cert-manager/acm
