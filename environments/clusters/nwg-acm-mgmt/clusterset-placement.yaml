@@ -54,3 +54,23 @@ spec:
               values:
                 - ocpz1
                 - ocpz2
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: active-cluster-placement
+  namespace: openshift-gitops
+spec:
+  clusterSets:
+    - nwg-z
+    # - nwg
+  predicates:
+    - requiredClusterSelector:
+        labelSelector:
+          matchExpressions:
+            - key: name
+              operator: In
+              values:
+                - ocpz1
+                # - nwg-mm
+                # - nwg-mg
