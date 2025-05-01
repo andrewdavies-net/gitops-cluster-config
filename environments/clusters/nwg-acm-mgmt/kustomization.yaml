@@ -10,4 +10,4 @@ components:
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/ibm-mq/acm
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/ibm-ace/acm
 # applications
-- https://github.com/andrewdavies-net/mq-test-instance/app01/overlays/development/acm
+- https://github.com/andrewdavies-net/mq-test-instance/app/overlays/development/acm
