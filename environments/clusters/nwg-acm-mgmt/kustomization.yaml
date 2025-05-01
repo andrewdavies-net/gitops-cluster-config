@@ -4,8 +4,10 @@ resources:
 - ../../../tenants/project-spaces/mq-qmgr02
 
 components:
+# baseline operators
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/gitops/acm
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/cert-manager/acm
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/ibm-mq/acm
 - https://github.com/andrewdavies-net/gitops-components-library/components/operators/ibm-ace/acm
+# applications
 - https://github.com/andrewdavies-net/mq-test-instance/environments/dev/app01/acm
