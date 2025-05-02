@@ -13,6 +13,16 @@ patches:
       path: /metadata/name
       value: app-qmgr02
 - target:
+    kind: RoleBinding
+    name: overwrite
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: admin-app-qmgr02
+    - op: replace
+      path: /metadata/namespace
+      value: app-qmgr02
+- target:
     kind: AppProject
     name: default-name
   patch: |-

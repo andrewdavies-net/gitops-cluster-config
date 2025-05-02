@@ -1,12 +1,9 @@
+---
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: admin
-  namespace: default-name
-  annotations:
-    argocd.argoproj.io/sync-wave: "-1"
-  labels:
-    argocd.argoproj.io/managed-by: openshift-gitops
+  name: overwrite
+  namespace: overwrite
 subjects:
   - kind: ServiceAccount
     name: openshift-gitops-argocd-application-controller
