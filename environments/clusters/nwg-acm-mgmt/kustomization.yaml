@@ -1,5 +1,7 @@
 resources:
 - ./clusterset-placement.yaml
+
+# This entire exercise is pointless right? it would just go into the ACM cluster not the remote ones
 - ../../../tenants/project-spaces/mq-qmgr01
 - ../../../tenants/project-spaces/mq-qmgr02
 
